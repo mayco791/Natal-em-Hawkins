@@ -265,10 +265,7 @@ const PricingSection = () => {
           </div>
 
           {/* MEMBRO DO CLUBE */}
-          <div className={`${glassCardClass} scale-105 z-10 border-red-500 shadow-[0_0_60px_rgba(255,26,26,0.4)]`}>
-            <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-red-600 text-white font-80s px-8 py-2 rounded-full text-xl tracking-widest shadow-lg z-20">
-              MAIS VENDIDO
-            </div>
+          <div className={glassCardClass}>
             <h3 className="font-80s text-3xl text-white mb-6 uppercase tracking-wider">MEMBRO DO CLUBE</h3>
             <div className={priceClassName}>
               R$ 8,00
@@ -287,7 +284,10 @@ const PricingSection = () => {
           </div>
 
           {/* O DEVORADOR DE MENTES */}
-          <div className={glassCardClass}>
+          <div className={`${glassCardClass} scale-105 z-10 border-red-500 shadow-[0_0_60px_rgba(255,26,26,0.4)]`}>
+            <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-red-600 text-white font-80s px-8 py-2 rounded-full text-xl tracking-widest shadow-lg z-20">
+              MAIS VENDIDO
+            </div>
             <h3 className="font-80s text-3xl text-white mb-6 uppercase tracking-wider">O DEVORADOR DE MENTES</h3>
             <div className={priceClassName}>
               R$ 10,00
@@ -322,6 +322,9 @@ const Footer = () => (
           </p>
           <p>
             Você estuda, aprende e aguarda o sorteio oficial no dia <span className="text-red-500 font-bold underline decoration-red-900">01/01/2026</span>. Os ganhadores serão divulgados nos perfis oficiais da campanha e entraremos em contato diretamente para combinar a entrega.
+          </p>
+          <p className="pt-4 text-zinc-300 font-bold">
+            Email para suporte: <span className="text-white underline">hawkinsnatal.sac@gmail.com</span>
           </p>
         </div>
       </div>
