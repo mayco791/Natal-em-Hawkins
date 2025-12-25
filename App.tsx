@@ -252,12 +252,13 @@ const PricingSection = () => {
               <li className="flex items-center gap-3"><Star size={20} className="text-red-500" /> 3 Números da Sorte</li>
               <li className="flex items-center gap-3"><CheckCircle size={20} className="text-red-500" /> Acesso ao HAWKINS CLUB</li>
             </ul>
-            <button 
-              className="btn-stranger-pill font-80s text-2xl py-6 w-full"
+            <a 
+              href="https://ninjop.mycartpanda.com/checkout/205232113:1"
+              className="btn-stranger-pill font-80s text-2xl py-6 w-full text-center"
               style={{ animation: 'pulseRed 2s infinite' }}
             >
               QUERO 3 CHANCES
-            </button>
+            </a>
           </div>
 
           {/* MEMBRO DO CLUBE */}
@@ -273,12 +274,13 @@ const PricingSection = () => {
               <li className="flex items-center gap-3"><Star size={24} className="text-red-500" /> 6 Números da Sorte</li>
               <li className="flex items-center gap-3"><CheckCircle size={24} className="text-red-500" /> Acesso ao HAWKINS CLUB</li>
             </ul>
-            <button 
-              className="btn-stranger-pill font-80s text-2xl py-6 w-full"
+            <a 
+              href="https://ninjop.mycartpanda.com/checkout/205239096:1"
+              className="btn-stranger-pill font-80s text-2xl py-6 w-full text-center"
               style={{ animation: 'pulseRed 2s infinite' }}
             >
               QUERO 6 CHANCES
-            </button>
+            </a>
           </div>
 
           {/* O DEVORADOR DE MENTES */}
@@ -292,12 +294,13 @@ const PricingSection = () => {
               <li className="flex items-center gap-3 text-red-400 italic font-bold">Dobro de chances por + R$ 4,00</li>
               <li className="flex items-center gap-3"><CheckCircle size={24} className="text-red-500" /> Acesso ao HAWKINS CLUB</li>
             </ul>
-            <button 
-              className="btn-stranger-pill font-80s text-2xl py-6 w-full"
+            <a 
+              href="https://ninjop.mycartpanda.com/checkout/205237110:1"
+              className="btn-stranger-pill font-80s text-2xl py-6 w-full text-center"
               style={{ animation: 'pulseRed 2s infinite' }}
             >
               QUERO CHANCE MÁXIMA
-            </button>
+            </a>
           </div>
         </div>
       </div>
