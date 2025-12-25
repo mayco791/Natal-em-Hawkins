@@ -294,7 +294,7 @@ const PricingSection = () => {
             </div>
             <ul className="text-gray-200 space-y-4 mb-12 text-left flex-grow font-semibold">
               <li className="flex items-center gap-3"><TrendingUp size={24} className="text-red-500" /> 12 Números da Sorte</li>
-              <li className="flex items-center gap-3 text-red-400 italic font-bold">Dobro de chances por + R$ 4,00</li>
+              <li className="flex items-center gap-3 text-red-400 italic font-bold">Dobro de chances por + R$ 2,00</li>
               <li className="flex items-center gap-3"><CheckCircle size={24} className="text-red-500" /> Acesso ao HAWKINS CLUB</li>
             </ul>
             <a 
