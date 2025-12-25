@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natal em Hawkins | Sorteio Especial</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=EB+Garamond:wght@800&family=Grenze+Gotisch:wght@400;700&family=Inter:wght@400;700&family=Spectral:wght@800&display=swap" rel="stylesheet">
+    <style>
+      @keyframes neonPulse {
+        0%, 100% { text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000; }
+        50% { text-shadow: 0 0 5px #ff0000, 0 0 10px #ff0000, 0 0 15px #ff0000; opacity: 0.9; }
+      }
+      @keyframes pulseRed {
+        0%, 100% { transform: scale(1); box-shadow: 0 0 20px rgba(220, 38, 38, 0.6); }
+        50% { transform: scale(1.05); box-shadow: 0 0 35px rgba(220, 38, 38, 0.9); }
+      }
+      @keyframes float {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-15px); }
+      }
+
+      /* Marquee Animation - Slightly slower for better readability */
+      @keyframes marquee {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(-50%); }
+      }
+      .marquee-content {
+        display: flex;
+        animation: marquee 16s linear infinite;
+        white-space: nowrap;
+        width: max-content;
+      }
+
+      /* Snow Fall Animation Optimized */
+      @keyframes snowFall {
+        0% { transform: translate3d(0, -10vh, 0) rotate(0deg); opacity: 0; }
+        10% { opacity: 0.7; }
+        90% { opacity: 0.7; }
+        100% { transform: translate3d(40px, 105vh, 0) rotate(360deg); opacity: 0; }
+      }
+      
+      .snow-particle {
+        position: fixed;
+        background: white;
+        border-radius: 50%;
+        pointer-events: none;
+        opacity: 0;
+        filter: blur(1px);
+        box-shadow: 0 0 3px rgba(255, 255, 255, 0.5);
+        will-change: transform;
+        backface-visibility: hidden;
+        z-index: 100;
+      }
+      
+      .font-stranger-logo { 
+        font-family: 'EB Garamond', serif; 
+        text-transform: uppercase;
+        letter-spacing: -0.05em;
+      }
+      
+      .font-stranger-alt { font-family: 'Grenze Gotisch', serif; }
+      .font-80s { font-family: 'Bebas Neue', cursive; }
+      .font-body { font-family: 'Inter', sans-serif; }
+      
+      .neon-text { animation: neonPulse 2s infinite alternate; color: #fff; }
+      
+      .animate-float {
+        animation: float 4s ease-in-out infinite;
+      }
+
+      .carousel-container::-webkit-scrollbar {
+        display: none;
+      }
+      .carousel-container {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+
+      /* New Premium Button Style */
+      .btn-stranger-pill {
+        background-color: #e61e1e;
+        color: white;
+        border-radius: 9999px;
+        box-shadow: 0 0 15px rgba(230, 30, 30, 0.5), inset 0 0 10px rgba(255, 255, 255, 0.2);
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        border: 2px solid rgba(255, 255, 255, 0.1);
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+      }
+      
+      .btn-stranger-pill:hover {
+        background-color: #ff2d2d;
+        box-shadow: 0 0 25px rgba(255, 45, 45, 0.8), inset 0 0 15px rgba(255, 255, 255, 0.3);
+        transform: scale(1.05);
+      }
+
+      .upside-down-bg {
+        background-color: #050505;
+        background-image: radial-gradient(circle at center, rgba(255, 0, 0, 0.08) 0%, transparent 70%);
+      }
+      
+      .stranger-logo-container {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        padding: 20px 0;
+      }
+      .stranger-line-top {
+        width: 100%;
+        height: 4px;
+        background: #ff0000;
+        box-shadow: 0 0 10px #ff0000;
+        margin-bottom: -5px;
+      }
+
+      .vhs-effect::after {
+        content: "";
+        position: fixed;
+        top: 0; left: 0; width: 100%; height: 100%;
+        background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.1) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.02), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.02));
+        background-size: 100% 2px, 3px 100%;
+        pointer-events: none;
+        z-index: 9999;
+      }
+      body { scroll-behavior: smooth; overflow-x: hidden; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/"
+  }
+}
+</script>
+</head>
+  <body class="bg-black text-white font-body selection:bg-red-600 selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
