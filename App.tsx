@@ -242,13 +242,14 @@ const PricingSection = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-stretch">
+          {/* TURISTA EM HAWKINS */}
           <div className={glassCardClass}>
             <h3 className="font-80s text-3xl text-white mb-6 uppercase tracking-wider">TURISTA EM HAWKINS</h3>
             <div className={priceClassName}>
-              R$ 7,50
+              R$ 5,50
             </div>
             <ul className="text-gray-200 space-y-4 mb-12 text-left flex-grow font-semibold">
-              <li className="flex items-center gap-3"><Star size={20} className="text-red-500" /> 03 Números da Sorte</li>
+              <li className="flex items-center gap-3"><Star size={20} className="text-red-500" /> 3 Números da Sorte</li>
               <li className="flex items-center gap-3"><CheckCircle size={20} className="text-red-500" /> Acesso ao HAWKINS CLUB</li>
             </ul>
             <button 
@@ -259,34 +260,36 @@ const PricingSection = () => {
             </button>
           </div>
 
+          {/* MEMBRO DO CLUBE */}
           <div className={`${glassCardClass} scale-105 z-10 border-red-500 shadow-[0_0_60px_rgba(255,26,26,0.4)]`}>
             <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-red-600 text-white font-80s px-8 py-2 rounded-full text-xl tracking-widest shadow-lg z-20">
               MAIS VENDIDO
             </div>
             <h3 className="font-80s text-3xl text-white mb-6 uppercase tracking-wider">MEMBRO DO CLUBE</h3>
             <div className={priceClassName}>
-              R$ 12,50
+              R$ 8,00
             </div>
             <ul className="text-gray-200 space-y-4 mb-12 text-left flex-grow font-bold">
-              <li className="flex items-center gap-3"><Star size={24} className="text-red-500" /> 05 Números da Sorte</li>
+              <li className="flex items-center gap-3"><Star size={24} className="text-red-500" /> 6 Números da Sorte</li>
               <li className="flex items-center gap-3"><CheckCircle size={24} className="text-red-500" /> Acesso ao HAWKINS CLUB</li>
             </ul>
             <button 
               className="btn-stranger-pill font-80s text-2xl py-6 w-full"
               style={{ animation: 'pulseRed 2s infinite' }}
             >
-              QUERO 5 CHANCES
+              QUERO 6 CHANCES
             </button>
           </div>
 
+          {/* O DEVORADOR DE MENTES */}
           <div className={glassCardClass}>
             <h3 className="font-80s text-3xl text-white mb-6 uppercase tracking-wider">O DEVORADOR DE MENTES</h3>
             <div className={priceClassName}>
-              R$ 17,50
+              R$ 10,00
             </div>
             <ul className="text-gray-200 space-y-4 mb-12 text-left flex-grow font-semibold">
-              <li className="flex items-center gap-3"><TrendingUp size={24} className="text-red-500" /> 10 Números da Sorte</li>
-              <li className="flex items-center gap-3 text-red-400 italic font-bold">Dobro de chances por + R$ 5,00</li>
+              <li className="flex items-center gap-3"><TrendingUp size={24} className="text-red-500" /> 12 Números da Sorte</li>
+              <li className="flex items-center gap-3 text-red-400 italic font-bold">Dobro de chances por + R$ 4,00</li>
               <li className="flex items-center gap-3"><CheckCircle size={24} className="text-red-500" /> Acesso ao HAWKINS CLUB</li>
             </ul>
             <button 
