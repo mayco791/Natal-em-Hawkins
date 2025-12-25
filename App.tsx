@@ -9,7 +9,10 @@ import {
   Lightbulb, 
   TrendingUp, 
   Star, 
-  Clock 
+  Clock,
+  ShieldCheck,
+  Lock,
+  CreditCard
 } from 'lucide-react';
 
 const SnowEffect = () => {
@@ -104,7 +107,7 @@ const HeroSection = () => {
 
       <div className="relative z-10 w-full max-w-4xl text-center flex flex-col items-center gap-6">
         <p className="text-white opacity-90 uppercase tracking-[0.15em] text-xs md:text-lg font-bold drop-shadow-md px-4">
-          Concorra a itens exclusivos e ganhe acesso imediato ao HAWKINS CLUB
+          GARANTA SUA COTA, GANHE PRÊMIOS NA HORA E CONCORRA AO GRANDE SORTEIO!
         </p>
         
         <div className="w-full flex justify-center pb-4">
@@ -246,7 +249,7 @@ const PricingSection = () => {
           <div className={glassCardClass}>
             <h3 className="font-80s text-3xl text-white mb-6 uppercase tracking-wider">TURISTA EM HAWKINS</h3>
             <div className={priceClassName}>
-              R$ 5,50
+              R$ 5,00
             </div>
             <ul className="text-gray-200 space-y-4 mb-12 text-left flex-grow font-semibold">
               <li className="flex items-center gap-3"><Star size={20} className="text-red-500" /> 3 Números da Sorte</li>
@@ -309,9 +312,9 @@ const PricingSection = () => {
 };
 
 const Footer = () => (
-  <footer className="bg-black border-t border-zinc-900 pt-20 pb-24 px-6 relative z-10">
-    <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-16">
-      <div className="max-w-xl">
+  <footer className="bg-black border-t border-zinc-900 pt-20 pb-12 px-6 relative z-10">
+    <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-start gap-16 mb-16">
+      <div className="max-w-xl text-center md:text-left">
         <h4 className="font-stranger-logo text-2xl text-red-600 mb-8 tracking-wider uppercase">COMO FUNCIONA O SORTEIO?</h4>
         <div className="space-y-6 text-gray-400 text-base leading-relaxed">
           <p>
@@ -322,9 +325,33 @@ const Footer = () => (
           </p>
         </div>
       </div>
-      <div className="flex flex-col md:items-end md:text-right shrink-0">
+      <div className="flex flex-col items-center md:items-end md:text-right shrink-0 w-full md:w-auto">
         <h2 className="font-stranger-logo text-5xl text-white mb-4">HAWKINS CLUB</h2>
         <p className="text-zinc-700 italic font-stranger-alt text-xl">"Friends don't lie. Participate and win."</p>
+      </div>
+    </div>
+
+    {/* Security and Rights Section */}
+    <div className="max-w-6xl mx-auto pt-10 border-t border-zinc-800 flex flex-col items-center gap-8">
+      <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12 opacity-70 hover:opacity-100 transition-opacity">
+        <div className="flex items-center gap-2 text-zinc-400 text-sm font-bold uppercase tracking-widest">
+          <ShieldCheck className="text-green-500" size={24} />
+          <span>Site Seguro</span>
+        </div>
+        <div className="flex items-center gap-2 text-zinc-400 text-sm font-bold uppercase tracking-widest">
+          <Lock className="text-blue-500" size={22} />
+          <span>SSL Blindado</span>
+        </div>
+        <div className="flex items-center gap-2 text-zinc-400 text-sm font-bold uppercase tracking-widest">
+          <CreditCard className="text-red-500" size={24} />
+          <span>Checkout Protegido</span>
+        </div>
+      </div>
+      
+      <div className="text-center space-y-2">
+        <p className="text-zinc-500 text-xs md:text-sm font-bold tracking-[0.2em] uppercase">
+          © {new Date().getFullYear()} Todos os direitos reservados Hawkins Club
+        </p>
       </div>
     </div>
   </footer>
