@@ -137,7 +137,7 @@ const ShowcaseSection = () => {
       id="prizes" 
       className="py-24 px-6 relative z-10 bg-center bg-no-repeat bg-cover"
       style={{ 
-        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 70%, rgba(0,0,0,1) 100%), url('${showcaseBgUrl}')` 
+        backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.6) 75%, rgba(0,0,0,1) 100%), url('${showcaseBgUrl}')` 
       }}
     >
       <div className="max-w-6xl mx-auto text-center relative z-10">
@@ -175,7 +175,7 @@ const BenefitsSection = () => {
   return (
     <section 
       className="py-24 px-6 relative z-10 bg-center bg-no-repeat bg-cover"
-      style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 30%, rgba(0,0,0,0.4) 80%, rgba(0,0,0,1) 100%), url('${benefitsBgUrl}')` }}
+      style={{ backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,1) 0%, rgba(0,0,0,0.5) 25%, rgba(0,0,0,0.4) 80%, rgba(0,0,0,1) 100%), url('${benefitsBgUrl}')` }}
     >
       <div className="max-w-4xl mx-auto">
         <div className="bg-black/60 border-y-2 md:border-y-0 md:border-x-2 border-red-600 p-8 md:p-16 rounded-lg backdrop-blur-md shadow-[0_0_50px_rgba(0,0,0,0.6)]">
